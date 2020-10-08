@@ -3,14 +3,14 @@ import '../App.css';
 import { Button } from './Button';
 import { useHistory } from 'react-router-dom';
 import './HeroSection.css';
-import video1 from './videos/introToJones.mp4'
+import video1 from './videos/CakeAd.mp4'
 
 function HeroSection() {
   const history = useHistory();
   return (
     <div className='hero-container'>
 
-      
+      <video src={video1} autoPlay loop muted type="video/mp4"/>
       <h1>We Love Cakes</h1>
       <p>becomes reality here!</p>
 

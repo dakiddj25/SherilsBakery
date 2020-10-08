@@ -1,3 +1,27 @@
+.welcomeBox{
+  padding: 4rem;
+  background: linear-gradient(90deg, rgb(115, 97, 216) 0%, rgb(200, 204, 241) 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Box1 Pic1"
+    ". Pic1"
+    "Pic2 Box2"
+    "Pic2 .";
+    
+}
+
+.Box1 { grid-area: Box1; }
+.Pic1 {
+   grid-area: Pic1; 
+   /* transform: translateX(-30%) scale(0.95); */
+  }
+.Box2 { grid-area: Box2; }
+.Pic2 { 
+  grid-area: Pic2;
+}
 
 .page > p {
     margin-top: 8px;

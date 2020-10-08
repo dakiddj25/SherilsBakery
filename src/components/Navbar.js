@@ -3,7 +3,6 @@ import { Button } from './Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCancelCircle } from 'react-icons/im';
 import { Link, useHistory } from 'react-router-dom';
-import logo from './images/logo.gif'
 import './Navbar.css';
 
 function Navbar() {
@@ -48,7 +47,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/AboutMe'
+                to='/AboutUs'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -57,7 +56,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/Resume'
+                to='/Gallery'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -85,7 +84,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button onClick={()=>history.push("/ContactMe")} buttonStyle='btn--outline'>Contact Me</Button>}
+          {button && <Button onClick={()=>history.push("/ContactUs")} buttonStyle='btn--outline'>Contact Me</Button>}
         </div>
       </nav>
     </>
