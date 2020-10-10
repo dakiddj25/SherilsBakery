@@ -3,7 +3,7 @@ import '../../App.css';
 import { MdPhoneIphone } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
 import Footer from '../Footer';
-
+import '../css/Contact.css';
 
  const SignUp = () =>{
   return(
