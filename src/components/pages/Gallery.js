@@ -3,10 +3,13 @@ import '../../App.css';
 import { Button } from '../Button';
 import Footer from '../Footer';
 import cake1 from '../images/cake1.JPG'
-import cake2 from '../images/cake2.JPG'
+import cake2 from '../images/cake2.jpg'
 import cake3 from '../images/cake3.png'
 import cake4 from '../images/cake4.png'
 import cake5 from '../images/cake5.png'
+import cake6 from '../images/cake6.jpg'
+import cake7 from '../images/cake7.png'
+
 import '../css/Gallery.css';
 
 const Gallery = (props) =>{
@@ -20,6 +23,9 @@ const Gallery = (props) =>{
     <div><img src={cake3} className='BakeryImg'/></div>
     <div><img src={cake4} className='BakeryImg'/></div>
     <div><img src={cake5} className='BakeryImg'/></div>
+    <div><img src={cake6} className='BakeryImg'/></div>
+    <div><img src={cake7} className='BakeryImg'/></div>
+
     </div>
 
       <Footer/>
