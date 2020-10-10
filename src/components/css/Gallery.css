@@ -1,3 +1,7 @@
+h1{
+text-align: center;
+}
+
 .container {
     padding: 1em;
     column-count: 3;
