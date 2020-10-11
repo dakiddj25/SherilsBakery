@@ -1,0 +1,26 @@
+h1{
+text-align: center;
+}
+
+.container {
+    padding: 1em;
+    column-count: 3;
+}
+
+img {
+    width: 100%;
+    /* margin-bottom: 1em; */
+}
+
+
+@media(max-width:700px) {
+    .container {
+        column-count: 2;
+    }
+}
+
+@media(max-width:500px) {
+    .container {
+        column-count: 1;
+    }
+}
