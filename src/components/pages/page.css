@@ -1,3 +1,6 @@
+.pageOne{
+  background: linear-gradient(90deg, rgb(115, 97, 216) 0%, rgb(200, 204, 241) 100%);
+}
 .welcomeBox{
   padding: 4rem;
   background: linear-gradient(90deg, rgb(115, 97, 216) 0%, rgb(200, 204, 241) 100%);
@@ -9,21 +12,59 @@
     "Box1 Pic1"
     ". Pic1"
     "Pic2 Box2"
-    "Pic2 .";
+    "Pic2 ."
+    "imgBorder imgBorder";
     
 }
 
-.Box1 { grid-area: Box1; }
+.Box1 { 
+  margin-top: 10%;
+  margin-right: 5px;
+  overflow: hidden;
+  height: 200px;
+  max-height: 35vh;
+  box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  grid-area: Box1; 
+}
+.Box1 p{
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .Pic1 {
    grid-area: Pic1; 
    /* transform: translateX(-30%) scale(0.95); */
   }
-.Box2 { grid-area: Box2; }
+.Pic1 img{
+  height: 450px;
+  width: 600px;
+}
+
+.Box2 { 
+  grid-area: Box2; 
+  margin-right: 5px;
+  overflow: hidden;
+  height: 200px;
+  max-height: 35vh;
+  box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.Box2 p{
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .Pic2 { 
   grid-area: Pic2;
 }
 
-.page > p {
+/* .page > p {
     margin-top: 8px;
     color: rgb(8, 8, 8);
     font-size: 25px;
@@ -34,7 +75,14 @@
     padding-top: 20px;
     text-align: center;
     
-  }
+  } */
+.imgBorder{
+  /* width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 350px; */
+}
+  
 
   @media only screen and (max-width: 1025px) {
     .page > p{
@@ -45,3 +93,27 @@
     }
   }
   
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+.slideanim.slide {                  
+    visibility: visible;                  
+    animation: slide 1s;
+}
+.slideanim::after {
+    /* useful when its child elements are float:left; */
+    content: "";
+    display: table;
+    clear: both;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}

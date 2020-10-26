@@ -3,7 +3,7 @@ import '../../App.css';
 import { Button } from '../Button';
 import Footer from '../Footer';
 import cake1 from '../images/cake1.JPG'
-import cake2 from '../images/cake2.jpg'
+import cake2 from '../images/cake2.JPG'
 import cake3 from '../images/cake3.png'
 import cake4 from '../images/cake4.png'
 import cake5 from '../images/cake5.png'

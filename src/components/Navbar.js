@@ -3,6 +3,7 @@ import { Button } from './Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCancelCircle } from 'react-icons/im';
 import { Link, useHistory } from 'react-router-dom';
+import cakelogo from './images/Cakes By Sherils.png'
 import './Navbar.css';
 
 function Navbar() {
@@ -32,8 +33,9 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-           Sheril's Bakery
-            {/* <img src={logo} className='logo'></img>  */}
+           {/* Cakes by Sheril */}
+           
+            <img src={cakelogo} className='logo' ></img> 
             <i class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
