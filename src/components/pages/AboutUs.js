@@ -8,7 +8,7 @@ import Footer from '../Footer'
 <>
   <h1 className='AboutMe'>Cakes</h1>
     <div className ='page'>
-      
+      This is our about page 
     </div>
     
     <Footer/>
