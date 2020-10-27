@@ -1,10 +1,5 @@
 import React, { useEffect } from 'react';
 import './page.css';
-import cake1 from '../images/cake1.JPG'
-import cake2 from '../images/IMG_0259.JPG'
-import cake3 from '../images/cakeslogo.png'
-import cake4 from '../images/IMG_0240.JPG'
-import cake5 from '../images/IMG_0256.JPG'
 import animate from 'animate.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -27,11 +22,11 @@ const Welcome =()=> {
         </div>
 
         <div data-aos='fade-left' className='Pic1'>
-            <img  src={cake1}  ></img>
+            <img  src='/images/cake1.JPG'  ></img>
         </div>
 
         <div className='Pic2' data-aos='fade-right'>
-            <img src={cake2} width="300" height="400"></img>
+            <img src='/images/IMG_0259.JPG' width="300" height="400"></img>
         </div>
 
         <div className='Box2' data-aos='fade-left'>
@@ -40,7 +35,7 @@ const Welcome =()=> {
         </div>
     </div>
     {/* middle Imgae to separate  */}
-    <img className='imgBorder' src={cake3}/>
+    <img className='imgBorder' src='/images/cakeslogo.png' />
 
     <div className='welcomeBox'>
         <div className='Box1' data-aos='fade-right'>
@@ -54,11 +49,11 @@ const Welcome =()=> {
         </div>
 
         <div data-aos='fade-left' className='Pic1'>
-            <img  src={cake4}  ></img>
+            <img  src='/images/IMG_0240.JPG' ></img>
         </div>
 
         <div className='Pic2' data-aos='fade-right'>
-            <img src={cake5} width="300" height="400"></img>
+            <img src='/images/IMG_0256.JPG' width="300" height="400"></img>
         </div>
 
         <div className='Box2' data-aos='fade-left'>
