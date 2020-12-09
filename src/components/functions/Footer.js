@@ -44,7 +44,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              AcessSoar Media
+              
               <i class='fab fa-typo3' />
             </Link>
           </div>
