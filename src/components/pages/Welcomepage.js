@@ -22,11 +22,11 @@ const Welcome =()=> {
         </div>
 
         <div data-aos='fade-left' className='Pic1'>
-            <img  src='/images/cake1.JPG'  ></img>
+            <img  src='/images/cake1.JPG' alt='cake'  ></img>
         </div>
 
         <div className='Pic2' data-aos='fade-right'>
-            <img src='/images/IMG_0259.JPG' width="300" height="400"></img>
+            <img src='/images/IMG_0259.JPG' width="300" height="400" alt='cake'></img>
         </div>
 
         <div className='Box2' data-aos='fade-left'>
@@ -35,7 +35,7 @@ const Welcome =()=> {
         </div>
     </div>
     {/* middle Imgae to separate  */}
-    <img className='imgBorder' src='/images/cakeslogo.png' />
+    <img className='imgBorder' src='/images/cakeslogo.png' alt='logo'/>
 
     <div className='welcomeBox'>
         <div className='Box1' data-aos='fade-right'>
@@ -49,11 +49,11 @@ const Welcome =()=> {
         </div>
 
         <div data-aos='fade-left' className='Pic1'>
-            <img  src='/images/IMG_0240.JPG' ></img>
+            <img  src='/images/IMG_0240.JPG'  alt='cake'></img>
         </div>
 
         <div className='Pic2' data-aos='fade-right'>
-            <img src='/images/IMG_0256.JPG' width="300" height="400"></img>
+            <img src='/images/IMG_0256.JPG' width="300" height="400" alt='cake'></img>
         </div>
 
         <div className='Box2' data-aos='fade-left'>
