@@ -22,9 +22,10 @@
   margin-right: 5px;
   overflow: hidden;
   height: 200px;
+  padding-right: 50px;
   max-height: 35vh;
   box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
-  border: 3px solid rgb(0, 0, 0);
+  /* border: 3px solid rgb(0, 0, 0); */
   border-radius: 10px;
   grid-area: Box1; 
 }
@@ -32,6 +33,11 @@
   text-align: center;
   padding: 50px 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+.Box1 button{
+  margin-left: 40%;
 }
 
 .Pic1 {
@@ -41,6 +47,7 @@
 .Pic1 img{
   height: 450px;
   width: 600px;
+  border-radius: 25%;
 }
 
 .Box2 { 
@@ -50,7 +57,7 @@
   height: 200px;
   max-height: 35vh;
   box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
-  border: 3px solid rgb(0, 0, 0);
+  /* border: 3px solid rgb(0, 0, 0); */
   border-radius: 10px;
   margin-left: 50px;
 }
@@ -58,10 +65,14 @@
   text-align: center;
   padding: 50px 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
 }
 
 .Pic2 { 
   grid-area: Pic2;
+}
+.Pic2 img{ 
+  border-radius: 25%;
 }
 
 /* .page > p {
@@ -82,7 +93,75 @@
   margin-right: 1%;
   height: 350px; */
 }
-  
+
+.welcomeBox2{
+  padding: 4rem;
+  background: rgb(109,114,195);
+  background: radial-gradient(circle, rgba(109,114,195,1) 0%, rgba(82,100,169,1) 80%, rgba(0,212,255,1) 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Box3 Pic3"
+    ". Pic3"
+    "Pic4 Box4"
+    "Pic4 ." ; 
+}
+
+
+.Box3 { 
+  margin-top: 10%;
+  margin-right: 5px;
+  overflow: hidden;
+  height: 200px;
+  max-height: 35vh;
+  box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
+  /* border: 3px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  grid-area: Box3; 
+}
+.Box3 p{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.Box3 button{
+  margin-left: 40%;
+}
+
+.Pic3 {
+   grid-area: Pic3; 
+   
+  }
+.Pic3 img{
+  height: 450px;
+  width: 600px;
+  border-radius: 25%;
+}
+
+.Box4 { 
+  grid-area: Box4; 
+  margin-right: 5px;
+  overflow: hidden;
+  height: 200px;
+  max-height: 35vh;
+  box-shadow: 0px 12px 18px -6px (rgb(0, 0, 0, 0.3));
+  /* border: 3px solid rgb(0, 0, 0); */
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.Box4 p{
+  text-align: center;
+  padding: 50px 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Pic4 { 
+  grid-area: Pic4;
+}
+.Pic4 img{
+  border-radius: 25%;
+}
 
   @media only screen and (max-width: 1025px) {
     .page > p{

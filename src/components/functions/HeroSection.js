@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import { Button } from './Button';
 import { useHistory } from 'react-router-dom';
 import './HeroSection.css';
@@ -19,7 +19,7 @@ function HeroSection() {
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
-          onClick={()=>history.push("/ContactUs")}
+          onClick={()=>history.push("/AboutMe")}
         >
           Order Some Cakes?
         </Button>
