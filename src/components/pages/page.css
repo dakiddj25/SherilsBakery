@@ -36,6 +36,10 @@
   font-size: 20px;
 }
 
+.Box1 button{
+  margin-left: 40%;
+}
+
 .Pic1 {
    grid-area: Pic1; 
    /* transform: translateX(-30%) scale(0.95); */
@@ -93,7 +97,7 @@
 .welcomeBox2{
   padding: 4rem;
   background: rgb(109,114,195);
-background: radial-gradient(circle, rgba(109,114,195,1) 0%, rgba(82,100,169,1) 80%, rgba(0,212,255,1) 100%);
+  background: radial-gradient(circle, rgba(109,114,195,1) 0%, rgba(82,100,169,1) 80%, rgba(0,212,255,1) 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
