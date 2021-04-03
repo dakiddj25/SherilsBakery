@@ -145,10 +145,10 @@ const gallery = [
         img:'/images/IMG_0242.JPG',
         alt:'cake image'
     },
-    {
-        img:'/images/IMG_0243.JPG',
-        alt:'cake image'
-    },
+    // {
+    //     img:'/images/IMG_0243.JPG',
+    //     alt:'cake image'
+    // },
     {
         img:'/images/IMG_0244.JPG',
         alt:'cake image'
