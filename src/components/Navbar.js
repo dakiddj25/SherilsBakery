@@ -3,7 +3,7 @@ import { Button } from './Button';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { ImCancelCircle } from 'react-icons/im';
 import { Link, useHistory } from 'react-router-dom';
-import './Navbar.css';
+import './css/Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -33,7 +33,6 @@ function Navbar() {
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
            {/* Cakes by Sheril */}
-           
             <img src='/images/Cakes By Sherils.png' className='logo' ></img> 
             <i class='fab fa-typo3' />
           </Link>

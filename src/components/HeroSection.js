@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import { useHistory } from 'react-router-dom';
-import './HeroSection.css';
+import './css/HeroSection.css';
 import video1 from './videos/CakeAd.mp4'
 
 function HeroSection() {

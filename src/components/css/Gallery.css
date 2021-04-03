@@ -1,10 +1,12 @@
 h1{
 text-align: center;
+color: white
 }
 
 .container {
     padding: 1em;
     column-count: 3;
+    background-color: #242424;
 }
 
 img {

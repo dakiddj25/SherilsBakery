@@ -219,9 +219,9 @@ const gallery = [
 const Gallery= () => {
     return(
         <div className="gallery">
-           <h1 className='SkillsHero'>Wonderfull Cakes</h1>
 
             <div className='container'>
+            {/* <h1 className='SkillsHero'>Wonderfull Cakes</h1> */}
             {gallery.map(photo => <GalleryCard photo={photo} /> )}
             </div>
 

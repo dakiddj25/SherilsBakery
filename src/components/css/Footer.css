@@ -1,10 +1,12 @@
 .footer-container {
     background-color: #242424;
+    /* background: linear-gradient(90deg, rgb(53, 44, 104) 0%, rgb(54, 60, 116) 100%); */
     /* padding: 4rem 0 2rem 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border:1px solid white;
   }
   
   
@@ -136,5 +138,5 @@
     }
   }
   
-  @media screen and (max-width: 768px) {
-  }
+  /* @media screen and (max-width: 768px) {
+  } */
