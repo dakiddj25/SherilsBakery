@@ -1,24 +1,58 @@
-input[type=text], select {
-    width: 25%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
+.main-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3%;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vw;
+}
+
+.contact-info{
+    /* padding-top: 15%; */
+    padding-right: 10%;
+
+}
+
+form{
+    padding-left: 35%;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
     margin-left: 15px;
     margin-bottom: 16px;
-    resize: vertical;
+    /* resize: vertical; */
+}
 
-  }
+label {
+    margin-left: 15px;
+}
 
-  label {
-      margin-left: 15px;
-  }
 
-  textarea{
-      width:  80%;
-      height: 200px;
-      margin-left: 15px;
+textarea {
+    width: 105%;
+    height: 200px;
+    margin-left: 15px;
+}
 
-  }
-  
+.submitBtn{
+background-color: transparent;
+border: 1px solid black;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-left: 15px;
+}
