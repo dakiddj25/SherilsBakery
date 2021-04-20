@@ -1,21 +1,21 @@
 import React from 'react';
 import '../css/page.css';
 import { useHistory } from 'react-router-dom';
-import { Button } from '../Button';
-import Footer from '../Footer'
+import { Button } from './Button';
+import Footer from './Footer'
 
- const Services =() =>{
+const Services =() =>{
     const history = useHistory();
-  return(
+return(
 <>
- 
-  <img className='imgBorder' src='/images/cakeslogo.png' />
+
+{/* <img className='imgBorder' src='/images/cakeslogo.png' /> */}
 
 <div className='pageOne'>
     <div className='welcomeBox2'>
         <div className='Box3' data-aos='fade-right'>
             <p>One evening, two families were out having dinner and a conversation about both their love of dessert had begun. Later, over a fantastic baklava, they lamented about how hard it was to find exceptional classic desserts anymore. Not extravagant over-the-top creations, but the traditions perfected.
-             </p>
+            </p>
         </div>
 
         <div data-aos='fade-left' className='Pic3'>
@@ -32,22 +32,21 @@ Birthdays, Graduations, Weddings, Anniversaries , Corporate Events, etc.
 Contact us for more information. </p>
         </div>
     </div>
-  
+
     <div className='welcomeBox2'>
         <div className='Box3' data-aos='fade-right'>
             <h1>Shop with us</h1>
             <p> 
             Treat yourself to my delisous cakes. Visit our contact me page and place your order for pickup today!
-             </p>
-             <Button 
+            </p>
+            <Button 
                 className='btns'
                 buttonStyle='btn--outline'
                 buttonSize='btn--large'
                 onClick={()=>history.push("/ContactUs")}
-             >
-             Order Cakes</Button>
-
-             
+            >
+            Order Cakes</Button>
+        
         </div>
 
         <div data-aos='fade-left' className='Pic3'>
@@ -66,14 +65,13 @@ Contact us for more information. </p>
                 buttonStyle='btn--outline'
                 buttonSize='btn--large'
                 onClick={()=>history.push("/Gallery")}>
-             Gallery</Button>
+            Gallery</Button>   
         </div>
     </div>
     </div>
     
-    <Footer/>
 </>
-  ) 
+) 
 
 }
 
