@@ -1,20 +1,25 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../App.css';
-import { MdPhoneIphone } from 'react-icons/md';
-import { GrMail } from 'react-icons/gr';
-import Footer from '../Footer';
 import '../css/Contact.css';
-
 import { useForm, ValidationError } from '@formspree/react';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-const Contactus = () =>{
+
+ const Contactus = () =>{
   const [state, handleSubmit] = useForm("xbjqrnvg");
+
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+},[])
+
   if (state.succeeded) {
       return <p>Thanks for ordering!</p>;
   }
 
   return (
-    <div>
+<div className="main-container">
+      <div className='contact-container' data-aos='fade-right'>
       <form onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address(Required)
@@ -27,13 +32,9 @@ const Contactus = () =>{
         placeholder='Email'
       />
       <br/>
-      <label htmlFor="fname">First Name(Required)</label>
+      <label htmlFor="name">Name(Required)</label>
       <br/>
-      <input type="text" id="fname" name="firstname" placeholder="first name.."/>
-      <br/>
-      <label htmlFor="lname">Last Name(Required)</label>
-      <br/>
-      <input type="text" id="lname" name="lastname" placeholder="last name.."/>
+      <input type="text" id="name" name="name" placeholder="Name.."/>
       <br/>
       <label htmlFor="number">Phone Number</label>
       <br/>
@@ -70,10 +71,17 @@ const Contactus = () =>{
       <option value="wedding">Pick up</option>
       <option value="birthday">Delievery</option>
       </select>
-      <hr/>
+      {/* <hr/> */}
       <label htmlFor="subject">Addtional Information</label>
       <br/>
-      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+        <br/>
+        <button type="submit" 
+                className="submitBtn"
+                disabled={state.submitting}>
+          Submit
+        </button>
+
       <ValidationError 
         prefix="Email" 
         field="email"
@@ -84,12 +92,27 @@ const Contactus = () =>{
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
+    
     </form>
 
-    <Footer />
+  </div>
+  <div className='contact-info' data-aos='fade-left'>
+    <h2>Brooklyn Location</h2>
+    <p>833 Flatbush Avenue</p>
+    <p>Brooklyn, NY 11226</p>
+    <p>(718)-704-1700</p>
+    <p>Sherilsbakery@gmail.com</p>
+    <h2>Hours</h2>
+      <p>Monday: 8:00 am - 10:00 pm</p>
+      <p>Tuesday: 8:00 am - 10:00 pm</p>
+      <p>Wednesday: 8:00 am - 10:00 pm</p>
+      <p>Thursday: 8:00 am - 10:00 pm</p>
+      <p>Friday: 8:00 am - 10:00 pm</p>
+      <p>Saturday: 10:00 am - 7:00pm</p>
+      <p>Sunday: Closed</p>
+    
+  </div>
+
   </div>
   )
 }
