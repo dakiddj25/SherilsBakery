@@ -4,7 +4,7 @@ import '../css/page.css';
 import animate from 'animate.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Button } from '../Button';
+import { Button } from './Button';
 
 const Welcome =()=> {
     useEffect(()=>{
