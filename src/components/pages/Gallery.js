@@ -1,6 +1,6 @@
 import React from 'react'
 import GalleryCard from './GalleryCard'
-import Footer from '../Footer';
+import Footer from './Footer';
 import '../css/Gallery.css';
 
 
@@ -224,8 +224,6 @@ const Gallery= () => {
             {/* <h1 className='SkillsHero'>Wonderfull Cakes</h1> */}
             {gallery.map(photo => <GalleryCard photo={photo} /> )}
             </div>
-
-            <Footer/>
         </div>
     )
 }
